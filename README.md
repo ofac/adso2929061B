@@ -8,10 +8,10 @@
 
 ![Hollow Knight](https://tinyurl.com/32t822xh)
 
-| ID | TOPIC |
-|--- |---    |
-|01  | Emmet |
-|02  | Html  |
-|03  | Css   |
+| ID | TOPIC | Description |
+|--- |---    |---          |
+|01  | Emmet |lorem ipsum  |
+|02  | Html  |lorem ipsum  |
+|03  | Css   |lorem ipsum  |
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
