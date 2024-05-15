@@ -85,7 +85,6 @@ body {
                 font-size: 3rem;
                 font-weight: 400;
                 display: flex;
-                letter-spacing: -0.2rem;
                 align-items: center;
                 gap: 0.6rem;
                 span {
@@ -150,6 +149,10 @@ body {
                 height: 28px;
                 display: flex;
                 align-items: center;
+
+
+
+                
                 justify-content: center;
                 width: 28px;
             }
