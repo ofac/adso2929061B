@@ -73,6 +73,7 @@ body {
     display: flex;
     font-family: var(--font-bd);
     justify-content: center;
+    flex-wrap: wrap;
     min-height: 100vh;
     nav {
         position: fixed;
@@ -149,6 +150,11 @@ body {
         }
         section {
             padding: 1rem;
+            background-color: var(--color-1);
+            border-radius: 4px;
+            margin-block: 1rem;
+            min-height: 25vh;
+            min-width: 400px;
             h3 {
                 border-bottom: 2px dotted var(--color-2);
                 margin-block: 0.6rem;
@@ -169,7 +175,7 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 2rem;
+            margin-block: 2rem;
             justify-content: center;
             gap: 0.6rem;
             a:is(:link, :visited) {
@@ -199,13 +205,6 @@ body {
                 background: linear-gradient(to right, #fffe, #fff6);
                 transform: scale(1.05) translateY(-4px);
             }
-        }
-        section {
-            background-color: var(--color-1);
-            border-radius: 4px;
-            margin-block: 1rem;
-            min-height: 25vh;
-            width: 400px;
         }
     }
 }
