@@ -20,11 +20,30 @@
                 Examples for adding custom Bootstrap tooltips with CSS and JavaScript using CSS3 for animations and data-bs-attributes for local title storage.
             </p>
         </header>
-        <section>
-            
+        <section class="content">
+            <h3 class="my-4">Example:</h3>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                Tooltip on top
+                </button>
+                <br><br>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                Tooltip on right
+                </button>
+                <br><br>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                Tooltip on bottom
+                </button>
+                <br><br>
+                <button type="button" class="btn btn-secondary ms-5" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+                Tooltip on left
+                </button>
         </section>
     </main>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
