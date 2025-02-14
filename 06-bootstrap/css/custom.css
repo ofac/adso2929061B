@@ -1,0 +1,18 @@
+/* - - - - - - - - - - - - - - */
+/* F O N T S */
+/* - - - - - - - - - - - - - - */
+@font-face {
+    font-family: 'Poppins-400';
+    src: url(../../fonts/Poppins-400.ttf);
+}
+@font-face {
+    font-family: 'Poppins-600';
+    src: url(../../fonts/Poppins-600.ttf);
+}
+
+body {
+    font-family: 'Poppins-400';
+    nav.navbar.bg-custom {
+        background-color: #563A9C;
+    }
+}
