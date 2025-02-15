@@ -13,6 +13,18 @@
 body {
     font-family: 'Poppins-400';
     nav.navbar.bg-custom {
-        background-color: #563A9C;
+        background-color: #563a9c;
+    }
+    div.row.hero {
+        padding-top: 98px;
+        div:nth-child(1) {
+            background-color: #ddcfff;
+            height: 680px;
+        }
+        div:nth-child(2) {
+            background: #b69afe url(../06-challenge/images/hero-picture.png) no-repeat bottom center;
+            background-size: 480px;
+            height: 680px;
+        }
     }
 }
