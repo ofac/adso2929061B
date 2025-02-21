@@ -64,9 +64,29 @@ body {
         }
     }
     div.row.portfolio {
-        div.col-lg-12 {
+        div.col-lg-10 {
             height: 680px;
             background-color: #fff;
         }
     }
+    div.row.footer {
+        div.col-lg-12 {
+            height: 400px;
+            background-color: #563a9c;
+        }
+    }
+}
+
+div.row.hero,
+div.row.about,
+div.row.services,
+div.row.portfolio {
+    position: relative;
+}
+
+a[name=about],
+a[name=services],
+a[name=portfolio] {
+    position: absolute;
+    top: -98px;
 }
