@@ -4,25 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>12- Challenge</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        #stage01,
+        #stage02,
+        #stage03 {
+            position: absolute;
+            transition: all 0.5s ease-in;
+            transform: translateX(-250%)
+        }
+
+        #stage01:target,
+        #stage02:target,
+        #stage03:target {
+            transform: translateX(0)
+        }
+    </style>
 </head>
-<body class="tailwind">
-    <nav>
-        <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-        </a>
-    </nav>
-    <main>
-        <header>
-            <h1>12- Challenge</h1>
-            <p>
-                Practical exercise to apply Tailwind concepts.
-            </p>
-        </header>
-        <section>
-            
-        </section>
-    </main>
+<body class="bg-indigo-900 min-h-screen flex justify-center items-center">
+            <!-- Stage 01 -->
+            <main class="w-96 h-[680px] bg-white rounded-3xl overflow-hidden stage1" id="stage01">
+                <figure class="h-[380px] bg-[url(images/bg-top.png)] bg-cover bg-gray-300 bg-no-repeat bg-top"></figure>
+                <nav class="flex gap-2 justify-center my-5">
+                    <div class="w-3 h-3 bg-orange-200 cursor-pointer rounded-full"></div>
+                    <div class="w-3 h-3 bg-orange-200 cursor-pointer rounded-full"></div>
+                    <div class="w-9 h-3 bg-orange-400 cursor-pointer rounded-full"></div>
+                </nav>
+                <h1 class="text-center text-5xl font-medium my-0 text-gray-600">StandUp</h1>
+                <p class="text-center my-4 text-gray-400 text-sm">
+                    Are you ready for learn languages <br>
+                    easily in the funniest way ?
+                </p>
+                <a class="bg-black justify-center items-center flex mx-auto my-10 w-48 text-white/80 text-sm p-4 rounded-xl hover:bg-black/80 hover:text-white hover:scale-105 transition-all duration-300 btn1" href="#stage02">Get started</a>
+            </main>
+            <!-- Stage 01 -->
+            <main class="w-96 h-[680px] bg-white rounded-3xl overflow-hidden stage2" id="stage02">
+                <nav class="flex justify-between my-6 mx-8">
+                   <a href="#stage01" class="transition duration-300 hover:scale-110">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                   </a> 
+                   <a href="javascript:;" class="transition duration-300 hover:scale-110">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                   </a>
+                </nav>
+                <h1 class="mx-8 my-6 text-3xl text-gray-600 font-medium">A2 - Elementary</h1>
+                <article class="mx-8 mb-2 flex gap-6 items-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full font-semibold text-xl text-gray-600 flex justify-center items-center">
+                        0%
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-xl text-gray-600">Lesson 1</h3>
+                        <p class="font-normal text-xs text-gray-400">How are you ?</p>
+                    </div>
+                </article>
+                <figure class="h-[140px] w-10/12 bg-[url(images/bg-item.png)] bg-cover bg-no-repeat bg-center rounded-2xl mx-auto mb-2"></figure>
+                <article class="mx-8 mb-2 flex gap-6 items-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full font-semibold text-xl text-gray-600 flex justify-center items-center">
+                        0%
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-xl text-gray-600">Lesson 2</h3>
+                        <p class="font-normal text-xs text-gray-400">Pronunciation</p>
+                    </div>
+                </article>
+                <article class="mx-8 mb-2 flex gap-6 items-center">
+                    <div class="bg-red-100 w-16 h-16 rounded-full font-semibold text-xl text-gray-600 flex justify-center items-center">
+                        0%
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-xl text-gray-600">Lesson 3</h3>
+                        <p class="font-normal text-xs text-gray-400">Demonstrative pronouns</p>
+                    </div>
+                </article>
+                <article class="mx-8 mb-2 flex gap-6 items-center">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full font-semibold text-xl text-gray-600 flex justify-center items-center">
+                        0%
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-xl text-gray-600">Lesson 4</h3>
+                        <p class="font-normal text-xs text-gray-400">Present continous</p>
+                    </div>
+                </article>
+                <a class="bg-black justify-center items-center flex mx-auto my-10 w-48 text-white/80 text-sm p-4 rounded-xl hover:bg-black/80 hover:text-white hover:scale-105 transition-all duration-300 btn2" href="#stage03">Next</a>
+            </main>
+            <!-- Stage 03 -->
+            <main class="w-96 h-[680px] bg-white rounded-3xl overflow-hidden stage3" id="stage03">
+                <nav class="flex justify-between my-6 mx-8">
+                   <a href="#stage02" class="transition duration-300 hover:scale-110">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                   </a> 
+                   <a href="javacript:;" class="transition duration-300 hover:scale-110">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                        </svg>
+                   </a>
+                </nav>
+                <h1 class="mx-8 my-6 text-3xl text-gray-600 font-medium text-center">Choose your language level</h1>
+                <nav class="bg-indigo-900 mx-4 rounded-2xl p-4 flex flex-col gap-4 font-normal divide-y divide-white/20 text-white">
+                    <a href="javascript:;" class="pb-4 pt-1">A1 - Basic</a>
+                    <a href="javascript:;" class="pb-4">A2 - Elementary</a>
+                    <a href="javascript:;" class="pb-4">B1 - Pre-Intermediate</a>
+                    <a href="javascript:;" class="pb-2">B2 - Intermediate</a>
+                </nav>
+                <p class="text-center my-14 text-gray-700 text-base">
+                    Or take a test to <br>
+                    determine the level. It will <br>
+                    take about 10 minutes.
+                </p>
+                <a class="bg-black justify-center items-center flex mx-auto my-10 w-48 text-white/80 text-sm p-4 rounded-xl hover:bg-black/80 hover:text-white hover:scale-105 transition-all duration-300" href="#stage01">Start test</a>
+            </main>
+
     <script src="js/tailwind.js"></script>
 </body>
 </html>

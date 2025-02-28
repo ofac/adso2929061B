@@ -34,12 +34,12 @@ body {
         }
     }
     div.row.about {
-        div.col-lg-6:nth-child(1) {
+        div.col-lg-6:nth-of-type(1) {
             background: #fff url(../06-challenge/images/about-picture.png) no-repeat center;
             background-size: 440px;
             height: 680px;
         }
-        div.col-lg-6:nth-child(2) {
+        div.col-lg-6:nth-of-type(2) {
             p.text-justify {
                 text-align: justify;
             }
@@ -73,6 +73,10 @@ body {
         div.col-lg-12 {
             height: 400px;
             background-color: #563a9c;
+            color: #fff;
+            a {
+                color: #fff;
+            }
         }
     }
 }
